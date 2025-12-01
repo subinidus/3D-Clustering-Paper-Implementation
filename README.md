@@ -24,20 +24,21 @@ To install requirements:
 pip install ultralytics pandas scikit-learn matplotlib tqdm
 ```
 
-##📂 Project Structure
+## 📂 Project Structure
 
 ├── src/
 │   ├── feature_extractor.py  # Script to extract features from images
 │   └── visualizer.py         # Script to visualize features using t-SNE
 └── README.md
 
-##🚀 Usage
+## 🚀 Usage
 1. Feature Extraction
 Extract backbone features from your dataset and save them as a CSV file.
 
 ```
 # Run from the project root directory
-python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./results/features.csv```
+python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./results/features.csv
+```
 --data: Path to the dataset directory (must contain subfolders like person, not_person).
 
 --model: Name of the YOLO model (e.g., yolov8s.pt, yolov10s.pt).
@@ -47,7 +48,9 @@ python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./resu
 2. Visualization (t-SNE)
 Visualize the extracted feature vectors.
 
-```python src/visualizer.py --features ./results/features.csv --output ./results/tsne_plot.png```
+```
+python src/visualizer.py --features ./results/features.csv --output ./results/tsne_plot.png
+```
 --features: Path to the CSV file generated in step 1.
 
 --output: Path to save the final t-SNE plot image.
