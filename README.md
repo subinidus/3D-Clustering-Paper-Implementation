@@ -20,7 +20,7 @@ This project focuses on analyzing the feature embedding capabilities of differen
 
 To install requirements:
 ```bash
-pip install ultralytics pandas scikit-learn matplotlib tqdm
+pip install ultralytics pandas scikit-learn matplotlib tqdm.
 
 ##📂 Project Structure
 ├── src/
