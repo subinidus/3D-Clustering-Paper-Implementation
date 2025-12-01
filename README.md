@@ -20,21 +20,22 @@ This project focuses on analyzing the feature embedding capabilities of differen
 
 To install requirements:
 ```bash
-pip install ultralytics pandas scikit-learn matplotlib tqdm.
+pip install ultralytics pandas scikit-learn matplotlib tqdm
+📂 Project Structure
+Plaintext
 
-##📂 Project Structure
 ├── src/
 │   ├── feature_extractor.py  # Extracts feature vectors from images using YOLO
 │   └── visualizer.py         # Visualizes the extracted features using t-SNE
 ├── data/                     # Dataset directory (e.g., person, not_person)
 ├── results/                  # Output directory for CSVs and plots
 └── README.md
-
-##🚀 Usage
+🚀 Usage
 1. Feature Extraction
 Extract backbone features from your dataset.
 
-```Bash
+Bash
+
 python feature_extractor.py --data ./data/my_dataset --model yolov8s.pt --output ./results/features.csv
 --data: Path to the dataset directory (must contain subfolders for each class).
 
@@ -42,19 +43,27 @@ python feature_extractor.py --data ./data/my_dataset --model yolov8s.pt --output
 
 --output: Path to save the extracted features (CSV).
 
-##2. Visualization (t-SNE)
+2. Visualization (t-SNE)
 Visualize the saved feature vectors.
 
-```Bash
+Bash
+
 python visualizer.py --features ./results/features.csv --output ./results/tsne_plot.png
 --features: Path to the CSV file generated in step 1.
 
 --output: Path to save the final t-SNE plot image.
 
-##📊 Results
-Below is an example of the t-SNE visualization comparing 'Person' and 'Not-Person' classes. (Place your result image here, e.g., ![t-SNE Result](./results/tsne_plot.png))
+📊 Results
+Below is an example of the t-SNE visualization comparing 'Person' and 'Not-Person' classes.
 
-##👨‍💻 Author
+(Place your result image here, e.g., ![t-SNE Result](./results/tsne_plot.png))
+
+👨‍💻 Author
 Seo Su-bin
 
 Dept. of Computer Science (AI Computing), Kyungpook National University
+
+Research Interest: Sports Data Science, Computer Vision, MLOps
+
+📜 License
+This project is licensed under the MIT License.
