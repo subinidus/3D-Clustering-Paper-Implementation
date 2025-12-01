@@ -20,12 +20,11 @@ This project focuses on analyzing the feature embedding capabilities of differen
 * tqdm
 
 To install requirements:
-```bash
+```
 pip install ultralytics pandas scikit-learn matplotlib tqdm
 ```
 
 ##📂 Project Structure
-Plaintext
 
 ├── src/
 │   ├── feature_extractor.py  # Script to extract features from images
@@ -36,8 +35,7 @@ Plaintext
 1. Feature Extraction
 Extract backbone features from your dataset and save them as a CSV file.
 
-```Bash
-
+```
 # Run from the project root directory
 python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./results/features.csv```
 --data: Path to the dataset directory (must contain subfolders like person, not_person).
@@ -49,26 +47,24 @@ python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./resu
 2. Visualization (t-SNE)
 Visualize the extracted feature vectors.
 
-Bash
-
-python src/visualizer.py --features ./results/features.csv --output ./results/tsne_plot.png```
+```python src/visualizer.py --features ./results/features.csv --output ./results/tsne_plot.png```
 --features: Path to the CSV file generated in step 1.
 
 --output: Path to save the final t-SNE plot image.
 
-##📊 Results
+## 📊 Results
 Below is an example of the t-SNE visualization comparing 'Person' and 'Not-Person' classes.
 
 (Run the code to generate your own tsne_plot.png and it will appear here)
 
-##👨‍💻 Author
+## 👨‍💻 Author
 Seo Su-bin
 
 Dept. of Computer Science (AI Computing), Kyungpook National University
 
 Research Interest: Sports Data Science, Computer Vision
 
-##📜 License
+## 📜 License
 This project is licensed under the MIT License.
 
 Research Interest: Sports Data Science, Computer Vision, MLOps
