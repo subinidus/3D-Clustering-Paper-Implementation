@@ -20,10 +20,10 @@ This project focuses on analyzing the feature embedding capabilities of differen
 * tqdm
 
 To install requirements:
-```bash
+~~~bash
 pip install ultralytics pandas scikit-learn matplotlib tqdm
-📂 Project Structure
-Plaintext
+
+## 📂 Project Structure
 
 ├── src/
 │   ├── feature_extractor.py  # Script to extract features from images
@@ -33,11 +33,11 @@ Plaintext
 │   └── not_person/
 ├── results/                  # Directory where CSVs and plots will be saved
 └── README.md
-🚀 Usage
+## 🚀 Usage
 1. Feature Extraction
 Extract backbone features from your dataset and save them as a CSV file.
 
-Bash
+~~~Bash
 
 # Run from the project root directory
 python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./results/features.csv
@@ -50,39 +50,24 @@ python src/feature_extractor.py --data ./data --model yolov8s.pt --output ./resu
 2. Visualization (t-SNE)
 Visualize the extracted feature vectors.
 
-Bash
-
+~~~Bash
 python src/visualizer.py --features ./results/features.csv --output ./results/tsne_plot.png
 --features: Path to the CSV file generated in step 1.
 
 --output: Path to save the final t-SNE plot image.
 
-📊 Results
+## 📊 Results
 Below is an example of the t-SNE visualization comparing 'Person' and 'Not-Person' classes.
 
 (Run the code to generate your own tsne_plot.png and it will appear here)
 
-👨‍💻 Author
+## 👨‍💻 Author
 Seo Su-bin
 
 Dept. of Computer Science (AI Computing), Kyungpook National University
 
 Research Interest: Sports Data Science, Computer Vision, MLOps
 
-Email: (본인의 이메일 주소를 입력하세요)
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
-
-
----
-
-### ✅ 적용 방법 (순서대로)
-
-1.  깃허브 웹사이트에서 `README.md` 파일 옆에 있는 **연필 아이콘(수정)**을 누릅니다.
-2.  기존에 적혀 있던 내용을 **전부 지웁니다.**
-3.  위 코드 블럭 우측 상단에 있는 **'Copy' 버튼**을 눌러 복사합니다.
-4.  깃허브 편집창에 **붙여넣기(Ctrl+V)** 합니다.
-5.  맨 아래 **[Commit changes]** 초록색 버튼을 누릅니다.
-
-이제 깔끔하게 보이실 겁니다! 확인해 보시고 이상하면 말씀해 주세요.
