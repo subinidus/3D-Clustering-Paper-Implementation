@@ -31,6 +31,8 @@ pip install ultralytics pandas scikit-learn matplotlib tqdm
 │   └── visualizer.py         # Script to visualize features using t-SNE
 └── README.md
 
+![Pipeline](./assets/paper_pipeline.png)
+
 ## 🚀 Usage
 1. Feature Extraction
 Extract backbone features from your dataset and save them as a CSV file.
