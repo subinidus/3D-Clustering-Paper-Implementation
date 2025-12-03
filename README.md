@@ -71,9 +71,3 @@ Research Interest: Sports Data Science, Computer Vision
 
 ## 📜 License
 This project is licensed under the MIT License.
-
-Research Interest: Sports Data Science, Computer Vision
-
-
-## 📜 License
-This project is licensed under the MIT License.
